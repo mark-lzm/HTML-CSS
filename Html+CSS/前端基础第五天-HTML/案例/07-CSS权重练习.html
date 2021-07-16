@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .nav {
+            color: red;
+        }
+
+        /* 继承的权重为0 */
+        /* .nav li 权重为 1 1 */
+        .nav li {
+            color: red;
+        }
+
+        /* 把第一个小li 颜色改为分数，并加粗 */
+        /* .pink 权重为 1 0   .nav .pink权重为 2 0 */
+        .nav .pink {
+            color: pink;
+            font-weight: 700;
+        }
+    </style>
+</head>
+
+<body>
+    <ul class="nav">
+        <li class="pink">111我111</li>
+        <li>2222是2222</li>
+        <li>333你3333</li>
+        <li>4444爹4444</li>
+    </ul>
+</body>
+
+</html>

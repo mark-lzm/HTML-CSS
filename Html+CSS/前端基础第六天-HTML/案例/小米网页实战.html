@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+        }
+
+
+        .box1 {
+            height: 56px;
+            background-color: rgb(51, 51, 51);
+        }
+
+        .box1 ul li a {
+            float: left;
+            height: 28px;
+            color: rgb(168, 176, 176);
+            text-align: center;
+            text-decoration: none;
+            margin: 14px auto;
+            padding-right: 5px;
+            border-right: 1px solid rgba(66, 66, 66);
+            margin-left: 5px;
+        }
+
+        .box1 ul li a:hover {
+            color: rgba(249, 245, 249);
+        }
+
+        .box1 .right a {
+            float: right;
+            height: 28px;
+            color: rgb(168, 176, 176);
+            text-align: center;
+            text-decoration: none;
+            margin: 14px auto;
+            padding-right: 5px;
+            border-right: 1px solid rgba(66, 66, 66);
+            margin-left: 5px;
+        }
+
+        .box1 .right a:hover {
+            color: rgba(249, 245, 249);
+        }
+
+
+        .box1 .shopping a {
+            float: right;
+            width: 120px;
+            height: 56px;
+            line-height: 50px;
+            margin: 0 auto;
+            text-align: center;
+            color: rgb(168, 176, 176);
+            text-decoration: none;
+        }
+
+        .box1 .shopping a:hover {
+            background-color: rgba(255, 255, 255);
+            color: rgba(255, 122, 32);
+        }
+
+        .box1 .SelectDelete {
+            border-right: 0px;
+        }
+
+
+        .box2 {
+            height: 100px;
+            margin: 10px auto;
+        }
+
+        .box2 .box2first {
+            float: left;
+            width: 62px;
+            height: 55px;
+        }
+
+        .box2 .box2first img {
+            display: block;
+            margin-top: 15px;
+            width: 80px;
+            height: 70px;
+        }
+
+        .box2 .box2center {
+            float: left;
+            height: 88px;
+            width: 1226px;
+
+            margin: 0 auto;
+            padding: 12px 0 0 180px;
+        }
+
+        .box2 .box2center li a {
+            /* height: 88px; */
+            /* width: 850px; */
+            display: block;
+            font-size: 22px;
+            text-decoration: none;
+            text-align: center;
+            color: rgba(51, 51, 51);
+            padding: 22px 11px 31px;
+
+        }
+
+        .box2 .box2center li {
+            float: left;
+        }
+
+        .box2 .box2center a:hover {
+            color: rgba(255, 103, 0);
+        }
+
+        .box2 .box2center .box2input {
+
+            width: 245px;
+            height: 40px;
+            margin: 13px 0px;
+            margin-left: 130px;
+            border: 1px solid rgb(224, 224, 224);
+            font-size: 16px;
+            outline: none;
+
+        }
+
+        .box2 .box2center .box2input:focus {
+            outline: 1px solid rgb(255, 103, 0);
+
+        }
+
+
+        .box3 {
+
+            width: 1226px;
+            margin: 0 auto;
+            height: 460px;
+            background-color: pink;
+        }
+
+        .box3 .box3one {
+            float: left;
+            width: 234px;
+            height: 460px;
+            background-color: rgb(69, 62, 79);
+        }
+
+        .box3 .box3two {
+            float: left;
+            width: 992px;
+            height: 460px;
+            background-color: skyblue;
+
+        }
+
+        .box3 .box3one a {
+            display: block;
+            width: 190px;
+            height: 42px;
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 42px;
+            color: rgba(255, 255, 255);
+            padding-left: 30px;
+            padding-right: 20px;
+        }
+
+        .box3 .box3one a:hover {
+            background-color: rgb(255, 103, 0);
+        }
+
+        .box3 .box3two img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .box3 .box3one a span {
+            float: right;
+            margin-left: 10px;
+        }
+
+        .box4 {
+            width: 1227px;
+            height: 170px;
+            margin: 10px auto;
+        }
+
+        .box4 ul .box4one {
+            float: left;
+            width: 234px;
+            height: 170px;
+            background-color: #5f5750;
+
+        }
+
+        .box4 ul .box4one a {
+            float: left;
+            display: block;
+            width: 76px;
+            height: 83px;
+            border: 1px solid rgb(102, 94, 87);
+            text-decoration: none;
+            font-size: 20px;
+            color: rgba(207, 204, 202);
+
+        }
+
+        .box4 ul .box4one a img {
+            width: 30px;
+            height: 30px;
+            padding-left: 20px;
+            margin-top: 10px;
+        }
+
+        .box4 ul .box4one a span {
+            display: block;
+            font-size: 14px;
+            padding-left: 10px;
+        }
+
+        .box4 ul .box4one a:hover {
+            color: rgb(255, 255, 255);
+        }
+
+
+        .box4 ul .box4two {
+            float: left;
+            width: 316px;
+            height: 170px;
+            margin-left: 15px;
+
+        }
+
+        .box4 ul .box4two img {
+            width: 316px;
+            height: 170px;
+        }
+
+        .box4 ul .box4two a {
+            display: block;
+            width: 316px;
+            height: 170px;
+        }
+
+        .box4 ul .box4two a:hover {
+            border: 1px dashed rgb(255, 0, 0);
+        }
+
+        .box4 ul .box4three {
+            float: left;
+            width: 316px;
+            height: 170px;
+            margin-left: 15px;
+
+        }
+
+        .box4 ul .box4three img {
+            width: 316px;
+            height: 170px;
+        }
+
+        .box4 ul .box4three a {
+            display: block;
+            width: 316px;
+            height: 170px;
+        }
+
+        .box4 ul .box4three a:hover {
+            border: 1px dashed rgb(255, 0, 0);
+        }
+
+        .box4 ul .box4four {
+            float: left;
+            width: 316px;
+            height: 170px;
+            margin-left: 15px;
+        }
+
+        .box4 ul .box4four img {
+            width: 316px;
+            height: 170px;
+        }
+
+        .box4 ul .box4four a {
+            display: block;
+            width: 316px;
+            height: 170px;
+        }
+
+        .box4 ul .box4four a:hover {
+            border: 1px dashed rgb(255, 0, 0);
+        }
+
+        .box5 {
+            width: 1227px;
+            height: 70px;
+            background-color: rgb(245, 245, 245);
+            margin: 0 auto;
+            color: rgb(51, 51, 51);
+            line-height: 70px;
+            font-size: 25px;
+        }
+
+        .box6 {
+            width: 1227px;
+            height: 350px;
+            background-color: rgb(245, 245, 245);
+            margin: 0 auto;
+        }
+
+        .box6 ul li {
+            display: block;
+            float: left;
+            height: 340px;
+            width: 233px;
+            padding: 0 1px;
+            background-color: pink;
+            margin-right: 13px;
+        }
+
+        .box6 ul .lilast {
+            margin-right: 0px;
+        }
+
+        .box6 ul .box6red {
+            margin: 50px auto;
+            margin-bottom: 30px;
+            padding: 0 70px;
+            color: red;
+            font-size: 24px;
+        }
+
+        .box6 ul img {
+            padding: 0 95px;
+        }
+
+        .box6 ul .box6end {
+            height: 30px;
+            font-size: 18px;
+            color: rgb(111, 109, 109);
+            margin: 20px auto;
+            margin-left: 54px;
+        }
+
+        .box6 ul span {
+            display: inline-block;
+            width: 56px;
+            height: 56px;
+            line-height: 60px;
+            font-size: 24px;
+            text-align: center;
+            color: rgb(253, 252, 252);
+            background-color: rgb(96, 87, 81);
+            margin-left: 12px;
+        }
+
+        .box6 ul i {
+            display: inline-block;
+            width: 0px;
+            height: 20px;
+            font-size: 26px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <ul>
+            <li><a href="#">小米商城</a> </li>
+            <li><a href="#">MIUI</a> </li>
+            <li><a href="#">loT</a> </li>
+            <li><a href="#">云服务</a></li>
+            <li><a href="#">天星科技</a> </li>
+            <li><a href="#">有品</a></li>
+            <li><a href="#">小爱开放平台</a></li>
+            <li><a href="#">企业团购</a> </li>
+            <li><a href="#">资质证明</a></li>
+            <li><a href="#">协议规则</a> </li>
+            <li><a href="#">下载app</a></li>
+            <li><a href="#">智能生活</a> </li>
+            <li><a href="#" class="SelectDelete">Select Location</a></li>
+        </ul>
+
+        </p>
+
+        <p class="shopping">
+            <a href="#">购物车(0)</a>
+        </p>
+
+        <p class="right">
+            <a href="#">消息通知</a>
+            <a href="#">注册</a>
+            <a href="#">登录</a>
+        </p>
+
+
+    </div>
+
+    <div class="box2">
+        <p class="box2first">
+            <img src="../素材/img/mi.png" alt="">
+        </p>
+        <ul class="box2center">
+            <li><a href="#">小米手机</a></li>
+            <li><a href="#">Redmi 红米</a></li>
+            <li><a href="#">电视</a></li>
+            <li><a href="#">笔记本</a></li>
+            <li><a href="#">家电</a></li>
+            <li><a href="#">路由器</a></li>
+            <li><a href="#">智能硬件</a></li>
+            <li><a href="#">服务</a></li>
+            <li><a href="#">社区</a></li>
+
+            <input type="text" class="box2input">
+
+
+        </ul>
+    </div>
+    <div class="box3">
+        <p class="box3one">
+
+            <a href="#">手机 电话卡 <span>></span></a>
+            <a href="#">电脑 盒子 <span>></span></a>
+            <a href="#">笔记本 显示器<span>></span></a>
+            <a href="#">家电 插线板<span>></span></a>
+            <a href="#">出行 穿戴<span>></span></a>
+            <a href="#">智能 路由器<span>></span></a>
+            <a href="#">电源 配件<span>></span></a>
+            <a href="#">健康 儿童<span>></span></a>
+            <a href="#">耳机 音箱<span>></span></a>
+            <a href="#">生活 箱包<span>></span></a>
+
+        </p>
+        <p class="box3two">
+            <img src="images/bg.jpg" alt="">
+        </p>
+    </div>
+    <div class="box4">
+        <ul>
+            <li class="box4one">
+                <a href="#"><img src="../素材/img/1.png" alt="小米秒杀"><span>小米秒杀</span></a>
+                <a href="#"><img src="../素材/img/2.png" alt=""><span>企业团购</span> </a>
+                <a href="#"><img src="../素材/img/3.png" alt=""><span>F码通道</span></a>
+                <a href="#"><img src="../素材/img/4.png" alt=""><span>米粉卡</span></a>
+                <a href="#"><img src="../素材/img/5.png" alt=""><span>以旧换新</span></a>
+                <a href="#"><img src="../素材/img/6.png" alt=""><span>话费充值</span></a>
+            </li>
+
+            <li class="box4two"><a href="#"><img src="../素材/img/a.jpg" alt=""></a></li>
+            <li class="box4three"><a href="#"><img src="../素材/img/b.jpg" alt=""></a></li>
+            <li class="box4four"><a href="#"><img src="../素材/img/c.jpg" alt=""></a></li>
+        </ul>
+    </div>
+    <div class="box5">
+        小米闪购
+    </div>
+    <div class="box6">
+        <ul>
+            <li>
+                <div class="box6red">10:00场</div>
+                <img src="../素材/img/shandian.jpg" alt="">
+                <div class="box6end">距离结束还有</div>
+                <span>10</span>
+                <i>:</i>
+                <span>15</span>
+                <i>:</i>
+                <span>08</span>
+            </li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li class="lilast"></li>
+        </ul>
+    </div>
+</body>
+
+</html>

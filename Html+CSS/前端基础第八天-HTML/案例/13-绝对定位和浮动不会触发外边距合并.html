@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 只要是浮动元素，绝对定位（固定定位）元素的都不会触发外边距合并问题 */
+        .father {
+            /* float: left; */
+            position: absolute;
+            width: 500px;
+            height: 500px;
+            background-color: pink;
+        }
+
+        .son {
+            /* float: left; */
+            /* position: absolute; */
+            /* position: relative;不行！！！！ */
+            width: 200px;
+            height: 200px;
+            background-color: purple;
+            /* 外边距合并 */
+            margin-top: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="father">
+        <div class="son"></div>
+    </div>
+</body>
+
+</html>

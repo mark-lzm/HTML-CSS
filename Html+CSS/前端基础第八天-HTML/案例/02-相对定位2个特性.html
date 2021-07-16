@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: pink;
+            /* margin: 100px; */
+            /* 定位=定位模式+边偏移 */
+            /* position: relative;
+            top: 100px;
+            left: 100px; */
+        }
+
+        .two {
+            background-color: purple;
+            /* 2、原来在标准流的区域继续占有，后面的盒子仍然以标准流的方式对待它 */
+            position: relative;
+            top: 100px;
+            left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>1</div>
+    <div class="two">2</div>
+    <div>3</div>
+</body>
+
+</html>
+
+
+
+package com.entity;
+
+import java.io.Serializable;
+import java.util.Objects;
+
+public class CarVo implements Serializable {
+    private int Cno;//驾驶证号
+    private String Cnumber;//车牌号
+    private String Cpname;//车主信息（车主姓名）
+
+    //get、set方法
+    public int getCno() {
+        return Cno;
+    }
+
+    public void setCno(int cno) {
+        Cno = cno;
+    }
+
+
+    public String getCnumber() {
+        return Cnumber;
+    }
+
+    public void setCnumber(String cnumber) {
+        Cnumber = cnumber;
+    }
+
+    public String getCpname() {
+        return Cpname;
+    }
+
+    public void setCpname(String cpname) {
+        Cpname = cpname;
+    }
+
+    //构造器
+    public CarVo(){};
+    public CarVo(int cno, String cnumber, String cpname) {
+        Cno = cno;
+        Cnumber = cnumber;
+        Cpname = cpname;
+    }
+
+    //将equals表示相等
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof CarVo)) return false;
+        CarVo carVo = (CarVo) o;
+        return getCno() == carVo.getCno() &&
+                getCnumber() == carVo.getCnumber() &&
+                getCpname() == carVo.getCpname();
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(getCno(), getCnumber(), getCpname());
+    }
+
+    //重写toString方法
+    @Override
+    public String toString() {
+        return "CarVo{" +
+                "Cno=" + Cno +
+                ", Cnumber=" + Cnumber +
+                ", Cpname=" + Cpname +
+                '}';
+    }
+
+}

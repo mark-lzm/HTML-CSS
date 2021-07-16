@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: 1px solid red;
+
+        }
+
+        div img {
+            /* 因为默认的是基线对齐，所以底侧有空白缝隙 */
+            /* vertical-align: baseline; */
+
+            /* 1.只要不是 基线对齐 就好 */
+            /* vertical-align: bottom; */
+            /* vertical-align: middle; */
+            /* vertical-align: top; */
+            /* 2.块级元素来说： vertical-align 无效
+            就不会有基线对齐的问题 */
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="images/3.jpg" alt="">
+    </div>
+</body>
+
+</html>

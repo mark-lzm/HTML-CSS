@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 子选择器，只能选择作为某元素最近一级的孩子，即可以理解为亲儿子 */
+        /* 元素1>元素2{ 样式声明 } */
+        .nav>a {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <a href="#">我是儿子</a>
+        <p>
+            <a href="# ">我是孙子</a>
+        </p>
+    </div>
+</body>
+
+</html>

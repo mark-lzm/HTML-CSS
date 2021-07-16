@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 300px;
+            border: 1px solid #ccc;
+            margin-left: -1px;
+            margin-top: -1px;
+
+        }
+
+        /* 鼠标经过div的意思 p:hover */
+        div:hover {
+            /* 我要让当前鼠标经过的这个div升到最高处来就好了 */
+            /* 定位的盒子在最高层 */
+            border: 1px solid #f40;
+            /* 我们只要保证当前盒子是定位，就能压住浮动和标准流盒子 */
+            /* position: relative; */
+            /* 我们只能用相对定位，因为相对定位占位置 */
+
+            /* 都是定位的盒子，就可以用 z-index来实现在高层 */
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

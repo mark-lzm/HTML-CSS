@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .damao,
+        .ermao,
+        .sanmao {
+            /* 绝对定位 */
+            position: absolute;
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+
+        /* z-index 
+        1、属性值：正整数，0，负整数，默认为0，数值越大，盒子越靠上
+        2、如果属性值相同，则按照书写顺序，后来居上
+        3、数字后面不能加单位
+         */
+        .damao {
+            z-index: 2;
+        }
+
+        .ermao {
+            top: 50px;
+            left: 50px;
+            z-index: 1;
+            background-color: green;
+        }
+
+        .sanmao {
+            top: 100px;
+            left: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="damao"></div>
+    <div class="ermao"></div>
+    <div class="sanmao"></div>
+</body>
+
+</html>
